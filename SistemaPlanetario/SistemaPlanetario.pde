@@ -168,8 +168,5 @@ void keyReleased() {
     if (keyCode == 'L') {
       light = !light;
     }
-    if (keyCode == 'T') {
-      show_text = !show_text;
-    }
   }
 }
