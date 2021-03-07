@@ -12,7 +12,6 @@ Para ejecutar el programa, descomprime el .zip y ejecuta "SistemaPlanetario/Sist
 # Índice
 * [Descripción](https://github.com/Chgv99/CIU-Sistema-Planetario#Descripcion)
 * [Instrucciones de uso](https://github.com/Chgv99/CIU-Sistema-Planetario#Instrucciones-de-uso)
-  * [Iluminación](https://github.com/Chgv99/CIU-Sistema-Planetario#Iluminacion)
 * [Funcionamiento](https://github.com/Chgv99/CIU-Sistema-Planetario#Funcionamiento)
 * [Errores conocidos](https://github.com/Chgv99/CIU-Sistema-Planetario#Errores)
 * [Referencias](https://github.com/Chgv99/CIU-Sistema-Planetario#Referencias)
@@ -34,9 +33,13 @@ Se ofrece la opción de [rotar la vista en ambos ejes](https://github.com/Chgv99
 
 Desactivar la iluminación permitirá visualizar mejor los planetas que se encuentren en el subespacio comprendido entre el Sol y la cámara, dado que no reflejan la luz del Sol hacia esta. Además, permitirá también visualizar los [nombres de los planetas](https://github.com/Chgv99/CIU-Sistema-Planetario#Texto).
 
+<p align="center">
+  <img width="666" height="500" src="https://i.gyazo.com/ea6ba1ac8da3580ad5c448e243b80daa.gif">
+</p>
+
 # Funcionamiento
 
-El código consiste en un "setup()", un "draw()", los métodos "createCelestialBody()", "addCelestialBody()" y los métodos relacionados con los input.
+El código consiste en un "setup()", un "draw()", los métodos "createCelestialBody()", "addCelestialBody()" y los métodos relacionados con los inputs.
 
 Primeramente se generan los planetas y sus texturas y se inicializan todos los valores.
 
@@ -142,7 +145,7 @@ void draw()
 }
 ```
 
-La riqueza de las rotaciones y traslaciones se consigue usando "pushMatrix()" y "popMatrix()", de manera que rotar la matriz espacial para rotar un planeta no afecta a los demás. Así, conseguimos que la rotación del Sol no haga que los demás planetas se trasladen en conjunto, pudiendo tener planetas cuya traslación va en sentido contrario o estén rotadas en el eje Z.
+La riqueza de las rotaciones y traslaciones se consigue usando "pushMatrix()" y "popMatrix()", de manera que rotar la matriz espacial para rotar un planeta no afecte a los demás. Así, conseguimos que la rotación del Sol no haga que los demás planetas se trasladen en conjunto, pudiendo tener planetas cuya traslación va en sentido contrario o estén rotadas en el eje Z.
 
 ```processing
 void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_speed, float orbit_radius, float tilt, float orbit_tilt, String name){
@@ -177,4 +180,4 @@ El texto que contiene el nombre de cada planeta rota con el mismo. Provocando qu
 # Referencias
 * [Processing 3](https://processing.org/)
 * [Processing 3 Reference](https://processing.org/reference/)
-* [Texturas](https://www.solarsystemscope.com/textures/)
+* [Solar System Scope. Texturas](https://www.solarsystemscope.com/textures/)
