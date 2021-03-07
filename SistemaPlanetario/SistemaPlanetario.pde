@@ -30,8 +30,6 @@ void setup()
   marte = createCelestialBody(13, img_marte);
   jupiter = createCelestialBody(35, img_jupiter);
   
-  //generateStars();
-  
   //Inicializa
   ang=0;
   translate_x = width/2;
@@ -63,17 +61,6 @@ void draw()
   
   rotateY(radians(rot_y));
   rotateX(-radians(rot_x));
-  //rotateX(radians(mouseY));
-  //rotateY(radians(mouseX));
-  
-  //drawStars();
-  //Estrella
-  /*pushMatrix();
-  rotateZ(radians(-25));
-  rotateY(radians(ang));
-  sphereDetail(50);
-  sphere(100);
-  popMatrix();*/
   
   //add planet
   pushMatrix();
@@ -118,21 +105,7 @@ PShape createCelestialBody(float radius, PImage texture){
   return cuerpo;
 }
 
-/*TODO
-* AÑADIR INCLINACIÓN ORBITAL
-*/
-/*void addMoon(PShape cuerpo, float translation_speed, float rotation_speed, float orbit_radius, float tilt){
-  rotateY(radians(ang * translation_speed));
-  translate(orbit_radius,0,0);
-  //pushMatrix();
-  rotateZ(radians(tilt));
-  rotateY(radians(ang * rotation_speed));
-  shape(cuerpo);
-}*/
-
 void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_speed, float orbit_radius, float tilt, float orbit_tilt, String name){
-  //pushMatrix();
-  //translate(width/2, height/2, 0);
   rotateZ(radians(orbit_tilt));
   rotateY(radians(ang * translation_speed));
   
@@ -142,15 +115,10 @@ void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_spe
   if (!light) text(name, 0, 70);
   rotateZ(radians(tilt));
   rotateY(radians(ang*rotation_speed));
-  //sphereDetail(8);//ceil(radius*0.75));
-  //sphere(radius);
   shape(cuerpo);
-  //popMatrix();
 }
 
 void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_speed, float orbit_radius, float tilt, float orbit_tilt, String name, int name_distance){
-  //pushMatrix();
-  //translate(width/2, height/2, 0);
   rotateZ(radians(orbit_tilt));
   rotateY(radians(ang * translation_speed));
   
@@ -160,35 +128,7 @@ void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_spe
   if (!light) text(name, 0, name_distance);
   rotateZ(radians(tilt));
   rotateY(radians(ang*rotation_speed));
-  //sphereDetail(8);//ceil(radius*0.75));
-  //sphere(radius);
   shape(cuerpo);
-  //popMatrix();
-}
-
-void generateStars(){
-  star_positions = new ArrayList<Float>();
-  for (int i = 0; i < 200; i++) {
-    star_positions.add(radians(random(0,360)));
-    random(5,10);
-  }
-  
-}
-
-void drawStars(){
-  fill(255);
-  stroke(255);
-  
-  for (Object o : star_positions) {
-    float x = (float) o;
-    rotateY(x);
-    rotateX(x);
-    pushMatrix();
-    translate(width*3, 0);
-    //sphere(random(5,10));
-    sphere(5);
-    popMatrix();
-  } 
 }
 
 void key() {
