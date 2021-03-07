@@ -24,7 +24,7 @@ El sistema planetario está constituido por nuestra estrella, el Sol, los cinco 
 
 Se ha intentado respetar la naturaleza de estos planetas un mínimo, en lo que respecta a sus tamaños, orden de sus órbitas y texturas. Por otro lado, dado que la práctica trata del movimiento individual de objetos 3D primitivos y para demostrar estos conceptos, se ha tomado la libertad de escoger el sentido de rotación y traslación de los planetas de manera aleatoria.
 
-Por ello, las órbitas de Marte y de la Luna se han inclinado sobre el eje Z, dando lugar a un sistema más variado.
+Por ello, las órbitas de Marte y de la Luna se han inclinado sobre el eje Z y realizan traslación en sentido contrario a los demás planetas, dando lugar a un sistema más variado.
 
 # Instrucciones de uso
 
