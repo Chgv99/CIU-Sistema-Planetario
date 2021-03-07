@@ -6,7 +6,7 @@ Para ejecutar el programa, descomprime el .zip y ejecuta "SistemaPlanetario/Sist
 *Christian García Viguera. [Universidad de Las Palmas de Gran Canaria.](https://www2.ulpgc.es/)*
 
 <p align="center">
-  <img width="1000" height="750" src="https://i.gyazo.com/8bd0bc274cc0332c9875e5829139d061.gif">
+  <img width="666" height="500" src="https://i.gyazo.com/8bd0bc274cc0332c9875e5829139d061.gif">
 </p>
 
 # Índice
