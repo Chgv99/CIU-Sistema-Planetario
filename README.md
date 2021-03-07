@@ -164,7 +164,7 @@ void addCelestialBody(PShape cuerpo, float translation_speed, float rotation_spe
 
 # Errores
 
-* [Rotación](https://github.com/Chgv99/CIU-Sistema-Planetario#Rotacion)
+* [Rotación](https://github.com/Chgv99/CIU-Sistema-Planetario#Rotación)
 * [Texto](https://github.com/Chgv99/CIU-Sistema-Planetario#Texto)
 
 ## Rotación
