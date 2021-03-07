@@ -10,7 +10,7 @@ Para ejecutar el programa, descomprime el .zip y ejecuta "SistemaPlanetario/Sist
 </p>
 
 # Índice
-* [Descripción](https://github.com/Chgv99/CIU-Sistema-Planetario#Descripcion)
+* [Descripción](https://github.com/Chgv99/CIU-Sistema-Planetario#Descripción)
 * [Instrucciones de uso](https://github.com/Chgv99/CIU-Sistema-Planetario#Instrucciones-de-uso)
 * [Funcionamiento](https://github.com/Chgv99/CIU-Sistema-Planetario#Funcionamiento)
 * [Errores conocidos](https://github.com/Chgv99/CIU-Sistema-Planetario#Errores)
